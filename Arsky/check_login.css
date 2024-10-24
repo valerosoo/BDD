@@ -1,0 +1,122 @@
+#div_fondo_login{
+    display: flex;
+    background-color:  whitesmoke;
+    width: 8cm;
+    height: 7cm;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#div_borde_login{
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.5cm;
+    height: 7.5cm;
+}
+body {
+    background-image: url('aconcagua-invierno.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin: 0;
+    backdrop-filter: blur(1.5px)
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+#div_main{
+    background-color: whitesmoke;
+}
+h1{
+    margin: 0;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p, a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#button_header{
+    height: 100%;
+    border: none;
+    background-color: rgba(63, 152, 255, 0.912);
+
+}
+#button_header:hover{
+    cursor: pointer;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    width: 98vw;
+    height: 15vh;
+    background-color: white ;
+    gap: 3%;
+    justify-content: center;
+    transition: opacity 3s ease-in-out;
+    opacity: 0;
+}
+header img{
+  width: 100px;
+  height: 100%;
+}
+.arsky_text p{
+  margin: 2px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.arsky_text{
+  padding-top: 30px;
+}
+#img_div{
+    display: flex;
+    align-items: center;
+}
+#img_logo{
+    width: 106px;
+    height: 86px;
+}
+#div_bloque_celeste_header{
+  display: flex;
+  width: 50vw;
+  background-color: rgba(63, 152, 255, 0.912);
+  align-items: center;
+  justify-content: space-around;
+}
+#div_bloque_celeste_header2{
+    display: flex;
+    width: 3.5cm;
+    background-color: rgba(63, 152, 255, 0.912);
+    align-items: center;
+    justify-content: center;
+  }
+#div_ayuda_header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+}
+.a{
+    text-decoration: none;
+    color: black;
+}
+.a:hover{
+    transition: ease-in-out 0.17s;
+    color: blue;
+}
+#div_ayuda_header img{
+    width: 80%;
+    height: 35%;
+}
+#div_ayuda_header p{
+    margin: 3px;
+}

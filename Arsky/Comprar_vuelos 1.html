@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+    <link rel="stylesheet" href="Comprar_vuelos.css">
+    <link rel="icon" href="Logo_Arskyv2.png">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div id="div_borde_login">
+            <div id="div_fondo_login">
+                <h1>Comprar</h1>
+                <form id="formulario_login" action="comprar_vuelos.php" method="post">
+                    <label for="metodo-pago">Elige un método de pago:</label>
+                    <select id="metodo-pago" name="metodo-pago">
+                        <option value="">Selecciona</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="amex">American Express</option>
+                    </select>
+
+                    <div id="formulario-pago" style="display: none;">
+                        <!-- Formulario Visa -->
+<div id="visa-form" style="display: none;">
+    <label for="numero-visa">Número de tarjeta Visa:</label>
+    <input type="text" id="numero-visa" name="numero-visa" required placeholder="Ej: 1234 5678 9012 3456">
+    <label for="nombre-titular-visa">Nombre del Titular:</label>
+    <input type="text" id="nombre-titular-visa" name="nombre-titular-visa" required placeholder="Ej: Juan Pérez">
+    <label for="apellido-titular-visa">Apellido del Titular:</label>
+    <input type="text" id="apellido-titular-visa" name="apellido-titular-visa" required placeholder="Ej: Pérez">
+    <label for="fecha-vencimiento-visa">Fecha de vencimiento:</label>
+    <input type="text" id="fecha-vencimiento-visa" name="fecha-vencimiento-visa" placeholder="MM/AA" required pattern="\d{2}/\d{2}" title="Formato: MM/AA">
+</div>
+
+<!-- Formulario MasterCard -->
+<div id="mastercard-form" style="display: none;">
+    <label for="numero-mastercard">Número de tarjeta MasterCard:</label>
+    <input type="text" id="numero-mastercard" name="numero-mastercard" required placeholder="Ej: 1234 5678 9012 3456">
+    <label for="nombre-titular-mastercard">Nombre del Titular:</label>
+    <input type="text" id="nombre-titular-mastercard" name="nombre-titular-mastercard" required placeholder="Ej: Juan Pérez">
+    <label for="apellido-titular-mastercard">Apellido del Titular:</label>
+    <input type="text" id="apellido-titular-mastercard" name="apellido-titular-mastercard" required placeholder="Ej: Pérez">
+    <label for="fecha-vencimiento-mastercard">Fecha de vencimiento:</label>
+    <input type="text" id="fecha-vencimiento-mastercard" name="fecha-vencimiento-mastercard" placeholder="MM/AA" required pattern="\d{2}/\d{2}" title="Formato: MM/AA">
+</div>
+
+<!-- Formulario American Express -->
+<div id="amex-form" style="display: none;">
+    <label for="numero-amex">Número de tarjeta American Express:</label>
+    <input type="text" id="numero-amex" name="numero-amex" required placeholder="Ej: 34XXXXXXXXXXXX">
+    <label for="nombre-titular-amex">Nombre del Titular:</label>
+    <input type="text" id="nombre-titular-amex" name="nombre-titular-amex" required placeholder="Ej: Juan Pérez">
+    <label for="apellido-titular-amex">Apellido del Titular:</label>
+    <input type="text" id="apellido-titular-amex" name="apellido-titular-amex" required placeholder="Ej: Pérez">
+    <label for="fecha-vencimiento-amex">Fecha de vencimiento:</label>
+    <input type="text" id="fecha-vencimiento-amex" name="fecha-vencimiento-amex" placeholder="MM/AA" required pattern="\d{2}/\d{2}" title="Formato: MM/AA">
+</div>
+
+                        </div>
+                        <button type="submit">Pagar</button>
+                    </div>
+
+                    <script>
+                        const metodoPago = document.getElementById('metodo-pago');
+                        const formularioPago = document.getElementById('formulario-pago');
+
+                        metodoPago.addEventListener('change', function() {
+                            formularioPago.style.display = 'block';
+
+                            // Ocultar todos los formularios
+                            document.getElementById('visa-form').style.display = 'none';
+                            document.getElementById('mastercard-form').style.display = 'none';
+                            document.getElementById('amex-form').style.display = 'none';
+
+                            // Mostrar el formulario correspondiente
+                            switch (metodoPago.value) {
+                                case 'visa':
+                                    document.getElementById('visa-form').style.display = 'block';
+                                    break;
+                                case 'mastercard':
+                                    document.getElementById('mastercard-form').style.display = 'block';
+                                    break;
+                                case 'amex':
+                                    document.getElementById('amex-form').style.display = 'block';
+                                    break;
+                            }
+                        });
+                    </script>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Contenido del pie de página -->
+    </footer>
+</body>
+</html>

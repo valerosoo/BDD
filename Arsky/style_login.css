@@ -1,0 +1,112 @@
+header{
+    display: flex;
+    position: sticky;
+    width: 100vw;
+    height: 15vh;
+    background-color: white ;
+    justify-content: space-around;
+
+}
+header img{
+    width: 100px;
+    height: 100%;
+}
+.arsky_text p{
+    margin: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.arsky_text{
+    padding-top: 30px;
+}
+
+#div_bloque_celeste_header{
+    display: flex;
+    width: 50vw;
+    background-color: rgba(63, 152, 255, 0.912);
+    align-items: center;
+    justify-content: space-around;
+
+}
+#formulario_login{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.input_login{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: whitesmoke;
+}
+#div_ayuda_header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+}
+#div_bloque_celeste_header a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#div_ayuda_header img{
+    width: 80%;
+    height: 35%;
+}
+#div_ayuda_header p{
+    margin: 3px;
+}
+#div_fondo_login{
+    display: flex;
+    background-color:  whitesmoke;
+    width: 8cm;
+    height: 12.85cm;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#div_borde_login{
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.5cm;
+    height: 13.35cm;
+}
+.a{
+    text-decoration: none;
+    color: black;
+}
+.a:hover{
+    transition: ease-in-out 0.17s;
+    color: blue;
+}
+body {
+    background-image: url('aconcagua-invierno.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin: 0;
+    backdrop-filter: blur(1.5px)
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+#div_main{
+    background-color: whitesmoke;
+}
+#button_header{
+    height: 100%;
+    border: none;
+    background-color: rgba(63, 152, 255, 0.912);
+
+}
+#button_header:hover{
+    cursor: pointer;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

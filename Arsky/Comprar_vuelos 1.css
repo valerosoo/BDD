@@ -1,0 +1,71 @@
+body {
+    background-image: url('aconcagua-invierno.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin: 0;
+    backdrop-filter: blur(1.5px);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#div_borde_login {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Ancho flexible */
+    max-width: 400px; /* Ancho máximo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+#div_fondo_login {
+    display: flex;
+    background-color: whitesmoke;
+    width: 100%; /* Ancho completo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input, select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Margen entre campos */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+button:hover {
+    background-color: #45a049; /* Color al pasar el cursor */
+}
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

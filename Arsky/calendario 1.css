@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    background-image: url(avion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    margin: 0;
+    
+}
+header{
+    display: flex;
+    position: sticky;
+    width: 100vw;
+    height: 10vh;
+    background-color: white ;
+    gap: 3%;
+    justify-content: center;
+    transition: opacity 3s ease-in-out;
+    z-index: 600;
+}
+#img_div{
+    display: flex;
+    align-items: center;
+}
+#img_logo{
+    position: relative;
+    z-index: 700;
+    margin-top: 30px;
+    width: 106px;
+    height: 86px;
+    margin-left: 5px;
+  }
+.arsky_text p{
+    margin: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.arsky_text{
+    display: flex;
+    align-items: center;
+}
+#div_bloque_celeste_header{
+    display: flex;
+    width: 50vw;
+    background-color: rgba(63, 152, 255, 0.912);
+    align-items: center;
+    justify-content: space-around;
+  }
+h1{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+.a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.a:hover{
+    transition: ease-in-out 0.17s;
+    color: blue;
+}
+#div_ayuda_header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#div_ayuda_header img{
+    width: 60%;
+    height: 50%;
+}
+#div_ayuda_header p{
+    margin: 3px;
+}
+#div_bloque_celeste_header2{
+    display: flex;
+    width: 3.5cm;
+    background-color: rgba(63, 152, 255, 0.912);
+    align-items: center;
+    justify-content: center;
+  }
+footer {
+    background-color: rgba(63, 152, 255, 0.912);
+    color: black;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+  
+.div_footer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+  
+.div_footer:hover {
+    transform: scale(1.05);
+}
+  
+.div_footer h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black; /* Línea debajo del título en negro */
+    padding-bottom: 10px;
+}
+  
+#div_vuelos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.div_centrar{
+    display: flex;
+    justify-content: center;
+}
+main{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(1.5px)
+}
+.text-body{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+  }
+.text-footer {
+    font-size: 16px; /* Aumentado el tamaño del texto */
+    text-align: center;
+    margin: 5px 0;
+}
+  
+.text-footer_a {
+    font-size: 18px; /* Aumentado el tamaño del enlace */
+    color: #ffdd57; /* Color azul para los enlaces */
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+  
+.text-footer a:hover {
+    color: #0056b3; /* Color más oscuro al pasar el mouse */
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra de texto al pasar el mouse */
+}
+.redes-footer {
+    display: flex;
+    align-items: center; /* Alinear verticalmente al centro */
+    justify-content: flex-end; /* Alinear a la derecha */
+    margin-top: 20px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+  
+.redes-footer p {
+    color: black; /* Texto en negro */
+    margin-right: 10px; /* Espacio entre el texto y los íconos */
+    font-size: 18px; /* Aumentado el tamaño del texto */
+}
+  
+.redes-footer img {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px; /* Espacio horizontal entre íconos */
+    transition: transform 0.3s;
+}
+  
+.redes-footer img:hover {
+    transform: scale(1.2); /* Efecto de aumento al pasar el mouse */
+}
+footer a{
+    text-decoration: none;
+} 
+
+h1{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.card {
+    width: 170px;
+    height: 230px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    flex-shrink: 0;
+   }
+   
+   .card-details {
+    color: black;
+    height: 20px;
+    gap: 5px;
+   }
+   
+   .text-body {
+    color: rgb(97, 96, 96);
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+   
+
+@media(max-width: 720px){
+    .main_footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .div_footer{
+        width: 80%;
+    }
+    .arsky_text{
+        display:none;
+    }
+    #div_bloque_celeste_header{
+        display:none;
+    }
+}
